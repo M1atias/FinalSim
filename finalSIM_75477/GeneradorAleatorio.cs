@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace simulacion_tp5
+namespace finalSIM_75477
 {
     static class GeneradorAleatorio
     {
