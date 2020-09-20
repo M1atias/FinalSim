@@ -170,7 +170,7 @@ namespace SIM_Final
                 numeroAleatorio2 = GeneradorAleatorio.ObtenerSiguienteAleatorio();
 
             }
-            lbl_CostoAcumuladoTotal.Text = "Costo Acumulado Total: " + costoOperacionSemanaAcumulado;
+            lbl_CostoAcumuladoTotal.Text = "Costo Acumulado Total: $ " + costoOperacionSemanaAcumulado;
             btn_ComenzarSimulación.Enabled = false;
             btn_borrarSimulacion.Enabled = true;
             lbl_Bueno.Text = contadorBueno.ToString();
@@ -194,6 +194,10 @@ namespace SIM_Final
             textSemanas = 0;
             numeroAleatorio = 0;
             numeroAleatorio2 = 0;
+            lbl_CostoAcumuladoTotal.Text = "Costo Acumulado Total: $ 0";
+            lbl_Bueno.Text = "0";
+            lbl_Regular.Text = "0";
+            lbl_Malo.Text = "0";
         }
 
         private void button1_Click(object sender, EventArgs e)

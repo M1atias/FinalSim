@@ -664,9 +664,9 @@
             this.lbl_CostoAcumuladoTotal.AutoSize = true;
             this.lbl_CostoAcumuladoTotal.Location = new System.Drawing.Point(6, 27);
             this.lbl_CostoAcumuladoTotal.Name = "lbl_CostoAcumuladoTotal";
-            this.lbl_CostoAcumuladoTotal.Size = new System.Drawing.Size(129, 13);
+            this.lbl_CostoAcumuladoTotal.Size = new System.Drawing.Size(138, 13);
             this.lbl_CostoAcumuladoTotal.TabIndex = 73;
-            this.lbl_CostoAcumuladoTotal.Text = "Costo Acumulado Total: 0";
+            this.lbl_CostoAcumuladoTotal.Text = "Costo Acumulado Total: $ 0";
             // 
             // groupBox2
             // 
