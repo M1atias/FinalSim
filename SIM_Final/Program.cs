@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace finalSIM_75477
+namespace SIM_Final
 {
     static class Program
     {

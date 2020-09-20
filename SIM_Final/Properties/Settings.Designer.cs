@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace finalSIM_75477.Properties
+namespace SIM_Final.Properties
 {
 
 

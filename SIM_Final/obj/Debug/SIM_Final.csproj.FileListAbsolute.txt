@@ -1,0 +1,11 @@
+C:\Users\admin\FinalSim\SIM_Final\bin\Debug\SIM_Final.exe.config
+C:\Users\admin\FinalSim\SIM_Final\bin\Debug\SIM_Final.exe
+C:\Users\admin\FinalSim\SIM_Final\bin\Debug\SIM_Final.pdb
+C:\Users\admin\FinalSim\SIM_Final\obj\Debug\SIM_Final.csprojAssemblyReference.cache
+C:\Users\admin\FinalSim\SIM_Final\obj\Debug\SIM_Final.Form1.resources
+C:\Users\admin\FinalSim\SIM_Final\obj\Debug\SIM_Final.FormCasoA.resources
+C:\Users\admin\FinalSim\SIM_Final\obj\Debug\SIM_Final.Properties.Resources.resources
+C:\Users\admin\FinalSim\SIM_Final\obj\Debug\SIM_Final.csproj.GenerateResource.cache
+C:\Users\admin\FinalSim\SIM_Final\obj\Debug\SIM_Final.csproj.CoreCompileInputs.cache
+C:\Users\admin\FinalSim\SIM_Final\obj\Debug\SIM_Final.exe
+C:\Users\admin\FinalSim\SIM_Final\obj\Debug\SIM_Final.pdb

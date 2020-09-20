@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{656C2AA8-35D5-47B4-8086-3F91FA442C15}</ProjectGuid>
+    <ProjectGuid>{A9E8A712-B31B-4113-9727-F9FD173A0FC0}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>finalSIM_75477</RootNamespace>
-    <AssemblyName>finalSIM_75477</AssemblyName>
+    <RootNamespace>SIM_Final</RootNamespace>
+    <AssemblyName>SIM_Final</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -52,8 +52,22 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormCasoA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCasoA.Designer.cs">
+      <DependentUpon>FormCasoA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneradorAleatorio.cs" />
+    <Compile Include="GeneradorDistribuciones.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCasoA.resx">
+      <DependentUpon>FormCasoA.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // La información general de un ensamblado se controla mediante el siguiente 
 // conjunto de atributos. Cambie estos valores de atributo para modificar la información
 // asociada con un ensamblado.
-[assembly: AssemblyTitle("finalSIM_75477")]
+[assembly: AssemblyTitle("SIM_Final")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("finalSIM_75477")]
+[assembly: AssemblyProduct("SIM_Final")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // El siguiente GUID sirve como id. de typelib si este proyecto se expone a COM.
-[assembly: Guid("656c2aa8-35d5-47b4-8086-3f91fa442c15")]
+[assembly: Guid("a9e8a712-b31b-4113-9727-f9fd173a0fc0")]
 
 // La información de versión de un ensamblado consta de los cuatro valores siguientes:
 //
