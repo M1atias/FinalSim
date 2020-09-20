@@ -30,5 +30,11 @@ namespace SIM_Final
             //Varia el estado bueno
             //textBB = Convert.ToDouble(txt_BB.Text);
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FormCasoB formCasoB = new FormCasoB();
+            formCasoB.ShowDialog();
+        }
     }
 }

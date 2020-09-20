@@ -9,3 +9,4 @@ C:\Users\admin\FinalSim\SIM_Final\obj\Debug\SIM_Final.csproj.GenerateResource.ca
 C:\Users\admin\FinalSim\SIM_Final\obj\Debug\SIM_Final.csproj.CoreCompileInputs.cache
 C:\Users\admin\FinalSim\SIM_Final\obj\Debug\SIM_Final.exe
 C:\Users\admin\FinalSim\SIM_Final\obj\Debug\SIM_Final.pdb
+C:\Users\admin\FinalSim\SIM_Final\obj\Debug\SIM_Final.FormCasoB.resources
