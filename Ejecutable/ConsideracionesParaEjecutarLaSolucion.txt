@@ -1,0 +1,17 @@
+Para poder ejecutar y apreciar las politicas "B" y "D" se deben cambiar las probabilidades de los estados de los motores:
+1) Seleccionar el radio button Modificar Valores
+2) Modificar las probabilidades (recomendable seguir la siguiente configuración):
+- Motor en Estado Bueno:
+	- Probabilidad Bueno: 0.3
+	- Probabilidad Regular: 0.65
+	- Probabilidad Malo: 0.05
+- Motor en Estado Regular:
+	- Probabilidad regular: 0.95
+	- Probabilidad Malo: 0.05
+
+3) Seleccionar el botón "Recalcular Probabilidad Acumulada"
+4) Seleccionar nuevamente el radio button "Valores listos para simulación"
+5) Modificar las semanas a simular recomendable "500"
+6) Modificar el periodo de reparacion: "5" ó "10"
+
+Con esta configuración se deberia poder apreciar la politica "B" y "D"
