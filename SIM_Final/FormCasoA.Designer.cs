@@ -95,6 +95,8 @@
             this.txt_reparacionRegular = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
+            this.txt_reparacion = new System.Windows.Forms.TextBox();
+            this.lbl_reparacionSemanas = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_GridCasoA)).BeginInit();
             this.gb_modificarProbabilidades.SuspendLayout();
             this.gb_probabilidades.SuspendLayout();
@@ -397,7 +399,7 @@
             // 
             // btn_ComenzarSimulación
             // 
-            this.btn_ComenzarSimulación.Location = new System.Drawing.Point(154, 194);
+            this.btn_ComenzarSimulación.Location = new System.Drawing.Point(353, 195);
             this.btn_ComenzarSimulación.Name = "btn_ComenzarSimulación";
             this.btn_ComenzarSimulación.Size = new System.Drawing.Size(75, 35);
             this.btn_ComenzarSimulación.TabIndex = 64;
@@ -408,7 +410,7 @@
             // btn_borrarSimulacion
             // 
             this.btn_borrarSimulacion.Enabled = false;
-            this.btn_borrarSimulacion.Location = new System.Drawing.Point(242, 194);
+            this.btn_borrarSimulacion.Location = new System.Drawing.Point(441, 195);
             this.btn_borrarSimulacion.Name = "btn_borrarSimulacion";
             this.btn_borrarSimulacion.Size = new System.Drawing.Size(75, 35);
             this.btn_borrarSimulacion.TabIndex = 65;
@@ -764,11 +766,30 @@
             this.label24.TabIndex = 8;
             this.label24.Text = "Regular : ";
             // 
+            // txt_reparacion
+            // 
+            this.txt_reparacion.Location = new System.Drawing.Point(242, 202);
+            this.txt_reparacion.Name = "txt_reparacion";
+            this.txt_reparacion.Size = new System.Drawing.Size(58, 20);
+            this.txt_reparacion.TabIndex = 98;
+            this.txt_reparacion.Text = "52";
+            // 
+            // lbl_reparacionSemanas
+            // 
+            this.lbl_reparacionSemanas.AutoSize = true;
+            this.lbl_reparacionSemanas.Location = new System.Drawing.Point(165, 197);
+            this.lbl_reparacionSemanas.Name = "lbl_reparacionSemanas";
+            this.lbl_reparacionSemanas.Size = new System.Drawing.Size(71, 26);
+            this.lbl_reparacionSemanas.TabIndex = 97;
+            this.lbl_reparacionSemanas.Text = "Periodo de\r\nReparación : ";
+            // 
             // FormCasoA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1140, 721);
+            this.Controls.Add(this.txt_reparacion);
+            this.Controls.Add(this.lbl_reparacionSemanas);
             this.Controls.Add(this.gb_costoReparacion);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.gb_costoOperacion);
@@ -868,5 +889,7 @@
         private System.Windows.Forms.TextBox txt_reparacionRegular;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.TextBox txt_reparacion;
+        private System.Windows.Forms.Label lbl_reparacionSemanas;
     }
 }

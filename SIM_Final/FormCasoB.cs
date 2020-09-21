@@ -143,7 +143,7 @@ namespace SIM_Final
                     estadoMotorFin = compararValores(numeroAleatorio2, textRB, textRR, textRM);
                     contadorRegular += 1;
                     costoOperacionSemana = Convert.ToDouble(lbl_costoSemanaRegular.Text);
-                    if ((contadorRegular % 10) == 0)
+                    if ((contadorRegular % Convert.ToDouble(txt_reparacion.Text)) == 0)
                     {
                         costoReparacion = Convert.ToDouble(txt_reparacionRegular.Text);
                         estadoMotorFin = "Bueno";
@@ -167,7 +167,7 @@ namespace SIM_Final
                 numeroAleatorio2 = GeneradorAleatorio.ObtenerSiguienteAleatorio();
 
             }
-            lbl_CostoAcumuladoTotal.Text = "Costo Acumulado Total: $ " + costoOperacionSemanaAcumulado;
+            lbl_CostoAcumuladoTotal.Text = "Costo Acumulado Total: $ " + this.PonerPuntos(costoOperacionSemanaAcumulado);
             btn_ComenzarSimulación.Enabled = false;
             btn_borrarSimulacion.Enabled = true;
             lbl_Bueno.Text = contadorBueno.ToString();
@@ -176,6 +176,8 @@ namespace SIM_Final
             gb_costoOperacion.Enabled = false;
             gb_costoReparacion.Enabled = false;
             gb_modificarProbabilidades.Enabled = false;
+            txt_reparacion.Enabled = false;
+            txt_Semana.Enabled = false;
         }
 
         private void resetarDatos()
@@ -199,6 +201,33 @@ namespace SIM_Final
             lbl_Malo.Text = "0";
         }
 
+        private string PonerPuntos(double doble)
+        {
+            int numero = Convert.ToInt32(doble);
+            string resultado = "";
+            string inicio = numero.ToString();
+            int i = inicio.Length - 1;
+            int j = 0;
+
+
+            while (true)
+            {
+                resultado = inicio[i] + resultado;
+                i--;
+                j++;
+                if (i == -1)
+                {
+                    break;
+                }
+                if (j % 3 == 0)
+                {
+                    resultado = "," + resultado;
+                    j = 0;
+                }
+            }
+            return resultado;
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             this.resetarDatos();
@@ -207,6 +236,8 @@ namespace SIM_Final
             gb_costoOperacion.Enabled = true;
             gb_costoReparacion.Enabled = true;
             gb_modificarProbabilidades.Enabled = true;
+            txt_reparacion.Enabled = true;
+            txt_Semana.Enabled = true;
 
         }
 

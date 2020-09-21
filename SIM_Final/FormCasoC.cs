@@ -159,7 +159,7 @@ namespace SIM_Final
                 numeroAleatorio2 = GeneradorAleatorio.ObtenerSiguienteAleatorio();
 
             }
-            lbl_CostoAcumuladoTotal.Text = "Costo Acumulado Total: $ " + costoOperacionSemanaAcumulado;
+            lbl_CostoAcumuladoTotal.Text = "Costo Acumulado Total: $ " + this.PonerPuntos(costoOperacionSemanaAcumulado);
             btn_ComenzarSimulación.Enabled = false;
             btn_borrarSimulacion.Enabled = true;
             lbl_Bueno.Text = contadorBueno.ToString();
@@ -168,6 +168,33 @@ namespace SIM_Final
             gb_costoOperacion.Enabled = false;
             gb_costoReparacion.Enabled = false;
             gb_modificarProbabilidades.Enabled = false;
+        }
+
+        private string PonerPuntos(double doble)
+        {
+            int numero = Convert.ToInt32(doble);
+            string resultado = "";
+            string inicio = numero.ToString();
+            int i = inicio.Length - 1;
+            int j = 0;
+
+
+            while (true)
+            {
+                resultado = inicio[i] + resultado;
+                i--;
+                j++;
+                if (i == -1)
+                {
+                    break;
+                }
+                if (j % 3 == 0)
+                {
+                    resultado = "," + resultado;
+                    j = 0;
+                }
+            }
+            return resultado;
         }
 
         private void resetarDatos()
