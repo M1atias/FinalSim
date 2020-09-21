@@ -67,40 +67,40 @@
             this.lbl_Bueno = new System.Windows.Forms.Label();
             this.lbl_Regular = new System.Windows.Forms.Label();
             this.lbl_Malo = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.rbt_valoresListos = new System.Windows.Forms.RadioButton();
-            this.rbt_modificar = new System.Windows.Forms.RadioButton();
+            this.gb_modificarProbabilidades = new System.Windows.Forms.GroupBox();
             this.btn_Recalcular = new System.Windows.Forms.Button();
+            this.rbt_modificar = new System.Windows.Forms.RadioButton();
+            this.rbt_valoresListos = new System.Windows.Forms.RadioButton();
             this.gb_probabilidades = new System.Windows.Forms.GroupBox();
             this.gb_costoOperacion = new System.Windows.Forms.GroupBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.txt_costoBueno = new System.Windows.Forms.TextBox();
-            this.txt_costoRegular = new System.Windows.Forms.TextBox();
-            this.txt_costoMalo = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.lbl_costoSemanaBueno = new System.Windows.Forms.Label();
-            this.lbl_costoSemanaRegular = new System.Windows.Forms.Label();
-            this.lbl_costoSemanaMalo = new System.Windows.Forms.Label();
             this.btn_recalcularCostos = new System.Windows.Forms.Button();
+            this.lbl_costoSemanaMalo = new System.Windows.Forms.Label();
+            this.lbl_costoSemanaRegular = new System.Windows.Forms.Label();
+            this.lbl_costoSemanaBueno = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.txt_costoMalo = new System.Windows.Forms.TextBox();
+            this.txt_costoRegular = new System.Windows.Forms.TextBox();
+            this.txt_costoBueno = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.lbl_CostoAcumuladoTotal = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.gb_costoReparacion = new System.Windows.Forms.GroupBox();
             this.txt_reparacionMala = new System.Windows.Forms.TextBox();
             this.txt_reparacionRegular = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_GridCasoA)).BeginInit();
-            this.groupBox1.SuspendLayout();
+            this.gb_modificarProbabilidades.SuspendLayout();
             this.gb_probabilidades.SuspendLayout();
             this.gb_costoOperacion.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
+            this.gb_costoReparacion.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgv_GridCasoA
@@ -453,17 +453,38 @@
             this.lbl_Malo.TabIndex = 69;
             this.lbl_Malo.Text = "0";
             // 
-            // groupBox1
+            // gb_modificarProbabilidades
             // 
-            this.groupBox1.Controls.Add(this.btn_Recalcular);
-            this.groupBox1.Controls.Add(this.rbt_modificar);
-            this.groupBox1.Controls.Add(this.rbt_valoresListos);
-            this.groupBox1.Location = new System.Drawing.Point(644, 9);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(167, 180);
-            this.groupBox1.TabIndex = 70;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Modificar Probabilidades";
+            this.gb_modificarProbabilidades.Controls.Add(this.btn_Recalcular);
+            this.gb_modificarProbabilidades.Controls.Add(this.rbt_modificar);
+            this.gb_modificarProbabilidades.Controls.Add(this.rbt_valoresListos);
+            this.gb_modificarProbabilidades.Location = new System.Drawing.Point(644, 9);
+            this.gb_modificarProbabilidades.Name = "gb_modificarProbabilidades";
+            this.gb_modificarProbabilidades.Size = new System.Drawing.Size(167, 180);
+            this.gb_modificarProbabilidades.TabIndex = 70;
+            this.gb_modificarProbabilidades.TabStop = false;
+            this.gb_modificarProbabilidades.Text = "Modificar Probabilidades";
+            // 
+            // btn_Recalcular
+            // 
+            this.btn_Recalcular.Location = new System.Drawing.Point(17, 103);
+            this.btn_Recalcular.Name = "btn_Recalcular";
+            this.btn_Recalcular.Size = new System.Drawing.Size(137, 46);
+            this.btn_Recalcular.TabIndex = 71;
+            this.btn_Recalcular.Text = "Recalcular Probabilidad\r\nAcumuladas";
+            this.btn_Recalcular.UseVisualStyleBackColor = true;
+            this.btn_Recalcular.Click += new System.EventHandler(this.btn_Recalcular_Click);
+            // 
+            // rbt_modificar
+            // 
+            this.rbt_modificar.AutoSize = true;
+            this.rbt_modificar.Location = new System.Drawing.Point(6, 71);
+            this.rbt_modificar.Name = "rbt_modificar";
+            this.rbt_modificar.Size = new System.Drawing.Size(101, 17);
+            this.rbt_modificar.TabIndex = 1;
+            this.rbt_modificar.Text = "Modicar Valores";
+            this.rbt_modificar.UseVisualStyleBackColor = true;
+            this.rbt_modificar.CheckedChanged += new System.EventHandler(this.rbt_modificar_CheckedChanged);
             // 
             // rbt_valoresListos
             // 
@@ -477,27 +498,6 @@
             this.rbt_valoresListos.Text = "Valores listos \r\npara simulación";
             this.rbt_valoresListos.UseVisualStyleBackColor = true;
             this.rbt_valoresListos.CheckedChanged += new System.EventHandler(this.rbt_valoresListos_CheckedChanged);
-            // 
-            // rbt_modificar
-            // 
-            this.rbt_modificar.AutoSize = true;
-            this.rbt_modificar.Location = new System.Drawing.Point(6, 71);
-            this.rbt_modificar.Name = "rbt_modificar";
-            this.rbt_modificar.Size = new System.Drawing.Size(101, 17);
-            this.rbt_modificar.TabIndex = 1;
-            this.rbt_modificar.Text = "Modicar Valores";
-            this.rbt_modificar.UseVisualStyleBackColor = true;
-            this.rbt_modificar.CheckedChanged += new System.EventHandler(this.rbt_modificar_CheckedChanged);
-            // 
-            // btn_Recalcular
-            // 
-            this.btn_Recalcular.Location = new System.Drawing.Point(17, 103);
-            this.btn_Recalcular.Name = "btn_Recalcular";
-            this.btn_Recalcular.Size = new System.Drawing.Size(137, 46);
-            this.btn_Recalcular.TabIndex = 71;
-            this.btn_Recalcular.Text = "Recalcular Probabilidad\r\nAcumuladas";
-            this.btn_Recalcular.UseVisualStyleBackColor = true;
-            this.btn_Recalcular.Click += new System.EventHandler(this.btn_Recalcular_Click);
             // 
             // gb_probabilidades
             // 
@@ -559,92 +559,15 @@
             this.gb_costoOperacion.TabStop = false;
             this.gb_costoOperacion.Text = "Costo Operación";
             // 
-            // label5
+            // btn_recalcularCostos
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(16, 40);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(47, 13);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Bueno : ";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(16, 73);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(53, 13);
-            this.label15.TabIndex = 1;
-            this.label15.Text = "Regular : ";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(16, 112);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(36, 13);
-            this.label16.TabIndex = 2;
-            this.label16.Text = "Malo :";
-            // 
-            // txt_costoBueno
-            // 
-            this.txt_costoBueno.Location = new System.Drawing.Point(85, 37);
-            this.txt_costoBueno.Name = "txt_costoBueno";
-            this.txt_costoBueno.Size = new System.Drawing.Size(100, 20);
-            this.txt_costoBueno.TabIndex = 3;
-            this.txt_costoBueno.Text = "500000";
-            // 
-            // txt_costoRegular
-            // 
-            this.txt_costoRegular.Location = new System.Drawing.Point(85, 70);
-            this.txt_costoRegular.Name = "txt_costoRegular";
-            this.txt_costoRegular.Size = new System.Drawing.Size(100, 20);
-            this.txt_costoRegular.TabIndex = 4;
-            this.txt_costoRegular.Text = "1000000";
-            // 
-            // txt_costoMalo
-            // 
-            this.txt_costoMalo.Location = new System.Drawing.Point(85, 109);
-            this.txt_costoMalo.Name = "txt_costoMalo";
-            this.txt_costoMalo.Size = new System.Drawing.Size(100, 20);
-            this.txt_costoMalo.TabIndex = 5;
-            this.txt_costoMalo.Text = "2000000";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(95, 16);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(64, 13);
-            this.label17.TabIndex = 6;
-            this.label17.Text = "Costo Anual";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(235, 16);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(94, 13);
-            this.label18.TabIndex = 7;
-            this.label18.Text = "Costo por Semana";
-            // 
-            // lbl_costoSemanaBueno
-            // 
-            this.lbl_costoSemanaBueno.AutoSize = true;
-            this.lbl_costoSemanaBueno.Location = new System.Drawing.Point(262, 37);
-            this.lbl_costoSemanaBueno.Name = "lbl_costoSemanaBueno";
-            this.lbl_costoSemanaBueno.Size = new System.Drawing.Size(25, 13);
-            this.lbl_costoSemanaBueno.TabIndex = 8;
-            this.lbl_costoSemanaBueno.Text = "------";
-            // 
-            // lbl_costoSemanaRegular
-            // 
-            this.lbl_costoSemanaRegular.AutoSize = true;
-            this.lbl_costoSemanaRegular.Location = new System.Drawing.Point(262, 73);
-            this.lbl_costoSemanaRegular.Name = "lbl_costoSemanaRegular";
-            this.lbl_costoSemanaRegular.Size = new System.Drawing.Size(25, 13);
-            this.lbl_costoSemanaRegular.TabIndex = 9;
-            this.lbl_costoSemanaRegular.Text = "------";
+            this.btn_recalcularCostos.Location = new System.Drawing.Point(115, 146);
+            this.btn_recalcularCostos.Name = "btn_recalcularCostos";
+            this.btn_recalcularCostos.Size = new System.Drawing.Size(117, 23);
+            this.btn_recalcularCostos.TabIndex = 11;
+            this.btn_recalcularCostos.Text = "Recalcular Costos";
+            this.btn_recalcularCostos.UseVisualStyleBackColor = true;
+            this.btn_recalcularCostos.Click += new System.EventHandler(this.btn_recalcularCostos_Click);
             // 
             // lbl_costoSemanaMalo
             // 
@@ -655,15 +578,92 @@
             this.lbl_costoSemanaMalo.TabIndex = 10;
             this.lbl_costoSemanaMalo.Text = "------";
             // 
-            // btn_recalcularCostos
+            // lbl_costoSemanaRegular
             // 
-            this.btn_recalcularCostos.Location = new System.Drawing.Point(115, 146);
-            this.btn_recalcularCostos.Name = "btn_recalcularCostos";
-            this.btn_recalcularCostos.Size = new System.Drawing.Size(117, 23);
-            this.btn_recalcularCostos.TabIndex = 11;
-            this.btn_recalcularCostos.Text = "Recalcular Costos";
-            this.btn_recalcularCostos.UseVisualStyleBackColor = true;
-            this.btn_recalcularCostos.Click += new System.EventHandler(this.btn_recalcularCostos_Click);
+            this.lbl_costoSemanaRegular.AutoSize = true;
+            this.lbl_costoSemanaRegular.Location = new System.Drawing.Point(262, 73);
+            this.lbl_costoSemanaRegular.Name = "lbl_costoSemanaRegular";
+            this.lbl_costoSemanaRegular.Size = new System.Drawing.Size(25, 13);
+            this.lbl_costoSemanaRegular.TabIndex = 9;
+            this.lbl_costoSemanaRegular.Text = "------";
+            // 
+            // lbl_costoSemanaBueno
+            // 
+            this.lbl_costoSemanaBueno.AutoSize = true;
+            this.lbl_costoSemanaBueno.Location = new System.Drawing.Point(262, 37);
+            this.lbl_costoSemanaBueno.Name = "lbl_costoSemanaBueno";
+            this.lbl_costoSemanaBueno.Size = new System.Drawing.Size(25, 13);
+            this.lbl_costoSemanaBueno.TabIndex = 8;
+            this.lbl_costoSemanaBueno.Text = "------";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(235, 16);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(94, 13);
+            this.label18.TabIndex = 7;
+            this.label18.Text = "Costo por Semana";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(95, 16);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(64, 13);
+            this.label17.TabIndex = 6;
+            this.label17.Text = "Costo Anual";
+            // 
+            // txt_costoMalo
+            // 
+            this.txt_costoMalo.Location = new System.Drawing.Point(85, 109);
+            this.txt_costoMalo.Name = "txt_costoMalo";
+            this.txt_costoMalo.Size = new System.Drawing.Size(100, 20);
+            this.txt_costoMalo.TabIndex = 5;
+            this.txt_costoMalo.Text = "2000000";
+            // 
+            // txt_costoRegular
+            // 
+            this.txt_costoRegular.Location = new System.Drawing.Point(85, 70);
+            this.txt_costoRegular.Name = "txt_costoRegular";
+            this.txt_costoRegular.Size = new System.Drawing.Size(100, 20);
+            this.txt_costoRegular.TabIndex = 4;
+            this.txt_costoRegular.Text = "1000000";
+            // 
+            // txt_costoBueno
+            // 
+            this.txt_costoBueno.Location = new System.Drawing.Point(85, 37);
+            this.txt_costoBueno.Name = "txt_costoBueno";
+            this.txt_costoBueno.Size = new System.Drawing.Size(100, 20);
+            this.txt_costoBueno.TabIndex = 3;
+            this.txt_costoBueno.Text = "500000";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(16, 112);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(36, 13);
+            this.label16.TabIndex = 2;
+            this.label16.Text = "Malo :";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(16, 73);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(53, 13);
+            this.label15.TabIndex = 1;
+            this.label15.Text = "Regular : ";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(16, 40);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(47, 13);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Bueno : ";
             // 
             // lbl_CostoAcumuladoTotal
             // 
@@ -690,14 +690,14 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Resultados  de Simulación:";
             // 
-            // label19
+            // label21
             // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(6, 57);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(151, 13);
-            this.label19.TabIndex = 74;
-            this.label19.Text = "Cantidad Semanas en Bueno :";
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(6, 102);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(143, 13);
+            this.label21.TabIndex = 76;
+            this.label21.Text = "Cantidad Semanas en Malo :";
             // 
             // label20
             // 
@@ -708,27 +708,27 @@
             this.label20.TabIndex = 75;
             this.label20.Text = "Cantidad Semanas en Regular :";
             // 
-            // label21
+            // label19
             // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(6, 102);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(143, 13);
-            this.label21.TabIndex = 76;
-            this.label21.Text = "Cantidad Semanas en Malo :";
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(6, 57);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(151, 13);
+            this.label19.TabIndex = 74;
+            this.label19.Text = "Cantidad Semanas en Bueno :";
             // 
-            // groupBox3
+            // gb_costoReparacion
             // 
-            this.groupBox3.Controls.Add(this.txt_reparacionMala);
-            this.groupBox3.Controls.Add(this.txt_reparacionRegular);
-            this.groupBox3.Controls.Add(this.label23);
-            this.groupBox3.Controls.Add(this.label24);
-            this.groupBox3.Location = new System.Drawing.Point(661, 416);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(362, 110);
-            this.groupBox3.TabIndex = 96;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Costo Reparación";
+            this.gb_costoReparacion.Controls.Add(this.txt_reparacionMala);
+            this.gb_costoReparacion.Controls.Add(this.txt_reparacionRegular);
+            this.gb_costoReparacion.Controls.Add(this.label23);
+            this.gb_costoReparacion.Controls.Add(this.label24);
+            this.gb_costoReparacion.Location = new System.Drawing.Point(661, 416);
+            this.gb_costoReparacion.Name = "gb_costoReparacion";
+            this.gb_costoReparacion.Size = new System.Drawing.Size(362, 110);
+            this.gb_costoReparacion.TabIndex = 96;
+            this.gb_costoReparacion.TabStop = false;
+            this.gb_costoReparacion.Text = "Costo Reparación";
             // 
             // txt_reparacionMala
             // 
@@ -769,11 +769,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1140, 721);
-            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.gb_costoReparacion);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.gb_costoOperacion);
             this.Controls.Add(this.gb_probabilidades);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.gb_modificarProbabilidades);
             this.Controls.Add(this.btn_salir);
             this.Controls.Add(this.btn_borrarSimulacion);
             this.Controls.Add(this.btn_ComenzarSimulación);
@@ -784,16 +784,16 @@
             this.Text = "FormCasoA";
             this.Load += new System.EventHandler(this.FormCasoA_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_GridCasoA)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.gb_modificarProbabilidades.ResumeLayout(false);
+            this.gb_modificarProbabilidades.PerformLayout();
             this.gb_probabilidades.ResumeLayout(false);
             this.gb_probabilidades.PerformLayout();
             this.gb_costoOperacion.ResumeLayout(false);
             this.gb_costoOperacion.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
+            this.gb_costoReparacion.ResumeLayout(false);
+            this.gb_costoReparacion.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -840,7 +840,7 @@
         private System.Windows.Forms.Label lbl_Bueno;
         private System.Windows.Forms.Label lbl_Regular;
         private System.Windows.Forms.Label lbl_Malo;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox gb_modificarProbabilidades;
         private System.Windows.Forms.Button btn_Recalcular;
         private System.Windows.Forms.RadioButton rbt_modificar;
         private System.Windows.Forms.RadioButton rbt_valoresListos;
@@ -863,7 +863,7 @@
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox gb_costoReparacion;
         private System.Windows.Forms.TextBox txt_reparacionMala;
         private System.Windows.Forms.TextBox txt_reparacionRegular;
         private System.Windows.Forms.Label label23;

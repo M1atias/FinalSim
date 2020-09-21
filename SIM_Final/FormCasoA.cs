@@ -176,7 +176,9 @@ namespace SIM_Final
             lbl_Bueno.Text = contadorBueno.ToString();
             lbl_Regular.Text = contadorRegular.ToString();
             lbl_Malo.Text = contadorMalo.ToString();
-            //btn_recalcularCostos.Enabled = true;
+            gb_costoOperacion.Enabled = false;
+            gb_costoReparacion.Enabled = false;
+            gb_modificarProbabilidades.Enabled = false;
         }
 
         private void resetarDatos()
@@ -205,7 +207,9 @@ namespace SIM_Final
             this.resetarDatos();
             btn_ComenzarSimulación.Enabled = true;
             btn_borrarSimulacion.Enabled = false;
-            //btn_recalcularCostos.Enabled = false;
+            gb_costoOperacion.Enabled = true;
+            gb_costoReparacion.Enabled = true;
+            gb_modificarProbabilidades.Enabled = true;
         }
 
         private void btn_salir_Click(object sender, EventArgs e)

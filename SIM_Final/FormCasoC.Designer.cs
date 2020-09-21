@@ -80,7 +80,7 @@
             this.lbl_RB = new System.Windows.Forms.Label();
             this.lbl_RM = new System.Windows.Forms.Label();
             this.lbl_RR = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.gb_modificarProbabilidades = new System.Windows.Forms.GroupBox();
             this.btn_Recalcular = new System.Windows.Forms.Button();
             this.rbt_modificar = new System.Windows.Forms.RadioButton();
             this.rbt_valoresListos = new System.Windows.Forms.RadioButton();
@@ -90,7 +90,7 @@
             this.txt_Semana = new System.Windows.Forms.TextBox();
             this.lbl_Semana = new System.Windows.Forms.Label();
             this.dgv_GridCasoA = new System.Windows.Forms.DataGridView();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.gb_costoReparacion = new System.Windows.Forms.GroupBox();
             this.txt_reparacionMala = new System.Windows.Forms.TextBox();
             this.txt_reparacionRegular = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
@@ -98,9 +98,9 @@
             this.groupBox2.SuspendLayout();
             this.gb_costoOperacion.SuspendLayout();
             this.gb_probabilidades.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.gb_modificarProbabilidades.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_GridCasoA)).BeginInit();
-            this.groupBox3.SuspendLayout();
+            this.gb_costoReparacion.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox2
@@ -615,17 +615,17 @@
             this.lbl_RR.TabIndex = 52;
             this.lbl_RR.Text = "0.6";
             // 
-            // groupBox1
+            // gb_modificarProbabilidades
             // 
-            this.groupBox1.Controls.Add(this.btn_Recalcular);
-            this.groupBox1.Controls.Add(this.rbt_modificar);
-            this.groupBox1.Controls.Add(this.rbt_valoresListos);
-            this.groupBox1.Location = new System.Drawing.Point(637, 11);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(167, 180);
-            this.groupBox1.TabIndex = 91;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Modificar Probabilidades";
+            this.gb_modificarProbabilidades.Controls.Add(this.btn_Recalcular);
+            this.gb_modificarProbabilidades.Controls.Add(this.rbt_modificar);
+            this.gb_modificarProbabilidades.Controls.Add(this.rbt_valoresListos);
+            this.gb_modificarProbabilidades.Location = new System.Drawing.Point(637, 11);
+            this.gb_modificarProbabilidades.Name = "gb_modificarProbabilidades";
+            this.gb_modificarProbabilidades.Size = new System.Drawing.Size(167, 180);
+            this.gb_modificarProbabilidades.TabIndex = 91;
+            this.gb_modificarProbabilidades.TabStop = false;
+            this.gb_modificarProbabilidades.Text = "Modificar Probabilidades";
             // 
             // btn_Recalcular
             // 
@@ -717,18 +717,18 @@
             this.dgv_GridCasoA.Size = new System.Drawing.Size(644, 460);
             this.dgv_GridCasoA.TabIndex = 85;
             // 
-            // groupBox3
+            // gb_costoReparacion
             // 
-            this.groupBox3.Controls.Add(this.txt_reparacionMala);
-            this.groupBox3.Controls.Add(this.txt_reparacionRegular);
-            this.groupBox3.Controls.Add(this.label23);
-            this.groupBox3.Controls.Add(this.label24);
-            this.groupBox3.Location = new System.Drawing.Point(683, 429);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(362, 110);
-            this.groupBox3.TabIndex = 95;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Costo Reparación";
+            this.gb_costoReparacion.Controls.Add(this.txt_reparacionMala);
+            this.gb_costoReparacion.Controls.Add(this.txt_reparacionRegular);
+            this.gb_costoReparacion.Controls.Add(this.label23);
+            this.gb_costoReparacion.Controls.Add(this.label24);
+            this.gb_costoReparacion.Location = new System.Drawing.Point(683, 429);
+            this.gb_costoReparacion.Name = "gb_costoReparacion";
+            this.gb_costoReparacion.Size = new System.Drawing.Size(362, 110);
+            this.gb_costoReparacion.TabIndex = 95;
+            this.gb_costoReparacion.TabStop = false;
+            this.gb_costoReparacion.Text = "Costo Reparación";
             // 
             // txt_reparacionMala
             // 
@@ -769,11 +769,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1078, 749);
-            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.gb_costoReparacion);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.gb_costoOperacion);
             this.Controls.Add(this.gb_probabilidades);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.gb_modificarProbabilidades);
             this.Controls.Add(this.btn_salir);
             this.Controls.Add(this.btn_borrarSimulacion);
             this.Controls.Add(this.btn_ComenzarSimulación);
@@ -789,11 +789,11 @@
             this.gb_costoOperacion.PerformLayout();
             this.gb_probabilidades.ResumeLayout(false);
             this.gb_probabilidades.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.gb_modificarProbabilidades.ResumeLayout(false);
+            this.gb_modificarProbabilidades.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_GridCasoA)).EndInit();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
+            this.gb_costoReparacion.ResumeLayout(false);
+            this.gb_costoReparacion.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -853,7 +853,7 @@
         private System.Windows.Forms.Label lbl_RB;
         private System.Windows.Forms.Label lbl_RM;
         private System.Windows.Forms.Label lbl_RR;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox gb_modificarProbabilidades;
         private System.Windows.Forms.Button btn_Recalcular;
         private System.Windows.Forms.RadioButton rbt_modificar;
         private System.Windows.Forms.RadioButton rbt_valoresListos;
@@ -863,7 +863,7 @@
         private System.Windows.Forms.TextBox txt_Semana;
         private System.Windows.Forms.Label lbl_Semana;
         private System.Windows.Forms.DataGridView dgv_GridCasoA;
-        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox gb_costoReparacion;
         private System.Windows.Forms.TextBox txt_reparacionMala;
         private System.Windows.Forms.TextBox txt_reparacionRegular;
         private System.Windows.Forms.Label label23;
