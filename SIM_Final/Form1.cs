@@ -36,5 +36,17 @@ namespace SIM_Final
             FormCasoB formCasoB = new FormCasoB();
             formCasoB.ShowDialog();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            FormCasoC formCasoC = new FormCasoC();
+            formCasoC.ShowDialog();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            FormCasoD formCasoD = new FormCasoD();
+            formCasoD.ShowDialog();
+        }
     }
 }

@@ -64,6 +64,18 @@
     <Compile Include="FormCasoB.Designer.cs">
       <DependentUpon>FormCasoB.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormCasoC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCasoC.Designer.cs">
+      <DependentUpon>FormCasoC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCasoD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCasoD.Designer.cs">
+      <DependentUpon>FormCasoD.cs</DependentUpon>
+    </Compile>
     <Compile Include="GeneradorAleatorio.cs" />
     <Compile Include="GeneradorDistribuciones.cs" />
     <Compile Include="Program.cs" />
@@ -76,6 +88,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormCasoB.resx">
       <DependentUpon>FormCasoB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCasoC.resx">
+      <DependentUpon>FormCasoC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCasoD.resx">
+      <DependentUpon>FormCasoD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

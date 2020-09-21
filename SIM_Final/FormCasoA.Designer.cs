@@ -90,11 +90,17 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.txt_reparacionMala = new System.Windows.Forms.TextBox();
+            this.txt_reparacionRegular = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_GridCasoA)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.gb_probabilidades.SuspendLayout();
             this.gb_costoOperacion.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgv_GridCasoA
@@ -102,7 +108,7 @@
             this.dgv_GridCasoA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_GridCasoA.Location = new System.Drawing.Point(15, 235);
             this.dgv_GridCasoA.Name = "dgv_GridCasoA";
-            this.dgv_GridCasoA.Size = new System.Drawing.Size(550, 335);
+            this.dgv_GridCasoA.Size = new System.Drawing.Size(604, 454);
             this.dgv_GridCasoA.TabIndex = 0;
             // 
             // lbl_Semana
@@ -546,7 +552,7 @@
             this.gb_costoOperacion.Controls.Add(this.label16);
             this.gb_costoOperacion.Controls.Add(this.label15);
             this.gb_costoOperacion.Controls.Add(this.label5);
-            this.gb_costoOperacion.Location = new System.Drawing.Point(586, 235);
+            this.gb_costoOperacion.Location = new System.Drawing.Point(661, 235);
             this.gb_costoOperacion.Name = "gb_costoOperacion";
             this.gb_costoOperacion.Size = new System.Drawing.Size(362, 175);
             this.gb_costoOperacion.TabIndex = 72;
@@ -677,9 +683,9 @@
             this.groupBox2.Controls.Add(this.lbl_CostoAcumuladoTotal);
             this.groupBox2.Controls.Add(this.lbl_Regular);
             this.groupBox2.Controls.Add(this.lbl_Bueno);
-            this.groupBox2.Location = new System.Drawing.Point(584, 416);
+            this.groupBox2.Location = new System.Drawing.Point(661, 556);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(349, 133);
+            this.groupBox2.Size = new System.Drawing.Size(362, 133);
             this.groupBox2.TabIndex = 74;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Resultados  de Simulación:";
@@ -711,11 +717,59 @@
             this.label21.TabIndex = 76;
             this.label21.Text = "Cantidad Semanas en Malo :";
             // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.txt_reparacionMala);
+            this.groupBox3.Controls.Add(this.txt_reparacionRegular);
+            this.groupBox3.Controls.Add(this.label23);
+            this.groupBox3.Controls.Add(this.label24);
+            this.groupBox3.Location = new System.Drawing.Point(661, 416);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(362, 110);
+            this.groupBox3.TabIndex = 96;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Costo Reparación";
+            // 
+            // txt_reparacionMala
+            // 
+            this.txt_reparacionMala.Location = new System.Drawing.Point(85, 68);
+            this.txt_reparacionMala.Name = "txt_reparacionMala";
+            this.txt_reparacionMala.Size = new System.Drawing.Size(100, 20);
+            this.txt_reparacionMala.TabIndex = 12;
+            this.txt_reparacionMala.Text = "5000000";
+            // 
+            // txt_reparacionRegular
+            // 
+            this.txt_reparacionRegular.Location = new System.Drawing.Point(85, 29);
+            this.txt_reparacionRegular.Name = "txt_reparacionRegular";
+            this.txt_reparacionRegular.Size = new System.Drawing.Size(100, 20);
+            this.txt_reparacionRegular.TabIndex = 11;
+            this.txt_reparacionRegular.Text = "2500000";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(16, 71);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(36, 13);
+            this.label23.TabIndex = 9;
+            this.label23.Text = "Malo :";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(16, 32);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(53, 13);
+            this.label24.TabIndex = 8;
+            this.label24.Text = "Regular : ";
+            // 
             // FormCasoA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1106, 582);
+            this.ClientSize = new System.Drawing.Size(1140, 721);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.gb_costoOperacion);
             this.Controls.Add(this.gb_probabilidades);
@@ -738,6 +792,8 @@
             this.gb_costoOperacion.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -807,5 +863,10 @@
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.TextBox txt_reparacionMala;
+        private System.Windows.Forms.TextBox txt_reparacionRegular;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label24;
     }
 }

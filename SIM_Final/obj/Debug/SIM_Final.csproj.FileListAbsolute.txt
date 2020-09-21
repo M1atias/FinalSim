@@ -10,3 +10,5 @@ C:\Users\admin\FinalSim\SIM_Final\obj\Debug\SIM_Final.csproj.CoreCompileInputs.c
 C:\Users\admin\FinalSim\SIM_Final\obj\Debug\SIM_Final.exe
 C:\Users\admin\FinalSim\SIM_Final\obj\Debug\SIM_Final.pdb
 C:\Users\admin\FinalSim\SIM_Final\obj\Debug\SIM_Final.FormCasoB.resources
+C:\Users\admin\FinalSim\SIM_Final\obj\Debug\SIM_Final.FormCasoC.resources
+C:\Users\admin\FinalSim\SIM_Final\obj\Debug\SIM_Final.FormCasoD.resources

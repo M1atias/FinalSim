@@ -1,6 +1,6 @@
 ﻿namespace SIM_Final
 {
-    partial class FormCasoB
+    partial class FormCasoC
     {
         /// <summary>
         /// Required designer variable.
@@ -112,10 +112,10 @@
             this.groupBox2.Controls.Add(this.lbl_CostoAcumuladoTotal);
             this.groupBox2.Controls.Add(this.lbl_Regular);
             this.groupBox2.Controls.Add(this.lbl_Bueno);
-            this.groupBox2.Location = new System.Drawing.Point(639, 555);
+            this.groupBox2.Location = new System.Drawing.Point(683, 564);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(362, 133);
-            this.groupBox2.TabIndex = 84;
+            this.groupBox2.TabIndex = 94;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Resultados  de Simulación:";
             // 
@@ -196,10 +196,10 @@
             this.gb_costoOperacion.Controls.Add(this.label16);
             this.gb_costoOperacion.Controls.Add(this.label15);
             this.gb_costoOperacion.Controls.Add(this.label5);
-            this.gb_costoOperacion.Location = new System.Drawing.Point(639, 236);
+            this.gb_costoOperacion.Location = new System.Drawing.Point(683, 237);
             this.gb_costoOperacion.Name = "gb_costoOperacion";
             this.gb_costoOperacion.Size = new System.Drawing.Size(362, 175);
-            this.gb_costoOperacion.TabIndex = 83;
+            this.gb_costoOperacion.TabIndex = 93;
             this.gb_costoOperacion.TabStop = false;
             this.gb_costoOperacion.Text = "Costo Operación";
             // 
@@ -341,10 +341,10 @@
             this.gb_probabilidades.Controls.Add(this.lbl_RB);
             this.gb_probabilidades.Controls.Add(this.lbl_RM);
             this.gb_probabilidades.Controls.Add(this.lbl_RR);
-            this.gb_probabilidades.Location = new System.Drawing.Point(10, 6);
+            this.gb_probabilidades.Location = new System.Drawing.Point(8, 7);
             this.gb_probabilidades.Name = "gb_probabilidades";
             this.gb_probabilidades.Size = new System.Drawing.Size(604, 184);
-            this.gb_probabilidades.TabIndex = 82;
+            this.gb_probabilidades.TabIndex = 92;
             this.gb_probabilidades.TabStop = false;
             this.gb_probabilidades.Text = "Probabilidades";
             // 
@@ -620,10 +620,10 @@
             this.groupBox1.Controls.Add(this.btn_Recalcular);
             this.groupBox1.Controls.Add(this.rbt_modificar);
             this.groupBox1.Controls.Add(this.rbt_valoresListos);
-            this.groupBox1.Location = new System.Drawing.Point(639, 10);
+            this.groupBox1.Location = new System.Drawing.Point(637, 11);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(167, 180);
-            this.groupBox1.TabIndex = 81;
+            this.groupBox1.TabIndex = 91;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Modificar Probabilidades";
             // 
@@ -663,10 +663,10 @@
             // 
             // btn_salir
             // 
-            this.btn_salir.Location = new System.Drawing.Point(731, 195);
+            this.btn_salir.Location = new System.Drawing.Point(729, 196);
             this.btn_salir.Name = "btn_salir";
             this.btn_salir.Size = new System.Drawing.Size(75, 35);
-            this.btn_salir.TabIndex = 80;
+            this.btn_salir.TabIndex = 90;
             this.btn_salir.Text = "Salir";
             this.btn_salir.UseVisualStyleBackColor = true;
             this.btn_salir.Click += new System.EventHandler(this.btn_salir_Click_1);
@@ -674,48 +674,48 @@
             // btn_borrarSimulacion
             // 
             this.btn_borrarSimulacion.Enabled = false;
-            this.btn_borrarSimulacion.Location = new System.Drawing.Point(237, 195);
+            this.btn_borrarSimulacion.Location = new System.Drawing.Point(235, 196);
             this.btn_borrarSimulacion.Name = "btn_borrarSimulacion";
             this.btn_borrarSimulacion.Size = new System.Drawing.Size(75, 35);
-            this.btn_borrarSimulacion.TabIndex = 79;
+            this.btn_borrarSimulacion.TabIndex = 89;
             this.btn_borrarSimulacion.Text = "Borrar Simulación";
             this.btn_borrarSimulacion.UseVisualStyleBackColor = true;
             this.btn_borrarSimulacion.Click += new System.EventHandler(this.button1_Click);
             // 
             // btn_ComenzarSimulación
             // 
-            this.btn_ComenzarSimulación.Location = new System.Drawing.Point(149, 195);
+            this.btn_ComenzarSimulación.Location = new System.Drawing.Point(147, 196);
             this.btn_ComenzarSimulación.Name = "btn_ComenzarSimulación";
             this.btn_ComenzarSimulación.Size = new System.Drawing.Size(75, 35);
-            this.btn_ComenzarSimulación.TabIndex = 78;
+            this.btn_ComenzarSimulación.TabIndex = 88;
             this.btn_ComenzarSimulación.Text = "Comenzar Simulación";
             this.btn_ComenzarSimulación.UseVisualStyleBackColor = true;
             this.btn_ComenzarSimulación.Click += new System.EventHandler(this.btn_ComenzarSimulación_Click);
             // 
             // txt_Semana
             // 
-            this.txt_Semana.Location = new System.Drawing.Point(77, 203);
+            this.txt_Semana.Location = new System.Drawing.Point(75, 204);
             this.txt_Semana.Name = "txt_Semana";
             this.txt_Semana.Size = new System.Drawing.Size(58, 20);
-            this.txt_Semana.TabIndex = 77;
+            this.txt_Semana.TabIndex = 87;
             this.txt_Semana.Text = "52";
             // 
             // lbl_Semana
             // 
             this.lbl_Semana.AutoSize = true;
-            this.lbl_Semana.Location = new System.Drawing.Point(11, 206);
+            this.lbl_Semana.Location = new System.Drawing.Point(9, 207);
             this.lbl_Semana.Name = "lbl_Semana";
             this.lbl_Semana.Size = new System.Drawing.Size(60, 13);
-            this.lbl_Semana.TabIndex = 76;
+            this.lbl_Semana.TabIndex = 86;
             this.lbl_Semana.Text = "Semanas : ";
             // 
             // dgv_GridCasoA
             // 
             this.dgv_GridCasoA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_GridCasoA.Location = new System.Drawing.Point(10, 236);
+            this.dgv_GridCasoA.Location = new System.Drawing.Point(8, 237);
             this.dgv_GridCasoA.Name = "dgv_GridCasoA";
-            this.dgv_GridCasoA.Size = new System.Drawing.Size(604, 452);
-            this.dgv_GridCasoA.TabIndex = 75;
+            this.dgv_GridCasoA.Size = new System.Drawing.Size(644, 460);
+            this.dgv_GridCasoA.TabIndex = 85;
             // 
             // groupBox3
             // 
@@ -723,10 +723,10 @@
             this.groupBox3.Controls.Add(this.txt_reparacionRegular);
             this.groupBox3.Controls.Add(this.label23);
             this.groupBox3.Controls.Add(this.label24);
-            this.groupBox3.Location = new System.Drawing.Point(639, 439);
+            this.groupBox3.Location = new System.Drawing.Point(683, 429);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(362, 110);
-            this.groupBox3.TabIndex = 96;
+            this.groupBox3.TabIndex = 95;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Costo Reparación";
             // 
@@ -764,11 +764,11 @@
             this.label24.TabIndex = 8;
             this.label24.Text = "Regular : ";
             // 
-            // FormCasoB
+            // FormCasoC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1034, 731);
+            this.ClientSize = new System.Drawing.Size(1078, 749);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.gb_costoOperacion);
@@ -780,9 +780,9 @@
             this.Controls.Add(this.txt_Semana);
             this.Controls.Add(this.lbl_Semana);
             this.Controls.Add(this.dgv_GridCasoA);
-            this.Name = "FormCasoB";
-            this.Text = "FormCasoB";
-            this.Load += new System.EventHandler(this.FormCasoB_Load);
+            this.Name = "FormCasoC";
+            this.Text = "FormCasoC";
+            this.Load += new System.EventHandler(this.FormCasoC_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.gb_costoOperacion.ResumeLayout(false);

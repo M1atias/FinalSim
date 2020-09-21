@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace SIM_Final
 {
-    public partial class FormCasoB : Form
+    public partial class FormCasoD : Form
     {
         private double textBB;
         private double textBR;
@@ -36,18 +36,17 @@ namespace SIM_Final
         private double costoSemanaMalo;
         private double costoReparacion;
 
-        public FormCasoB()
+        public FormCasoD()
         {
             InitializeComponent();
             this.configurarDataGrid();
         }
 
-        private void FormCasoB_Load(object sender, EventArgs e)
+        private void FormCasoD_Load(object sender, EventArgs e)
         {
             gb_probabilidades.Enabled = false;
             btn_Recalcular.Enabled = false;
             recalcularCostoOperacion();
-
         }
 
         public void recalcularCostoOperacion()
@@ -143,16 +142,9 @@ namespace SIM_Final
                     estadoMotorFin = compararValores(numeroAleatorio2, textRB, textRR, textRM);
                     contadorRegular += 1;
                     costoOperacionSemana = Convert.ToDouble(lbl_costoSemanaRegular.Text);
-                    if ((contadorRegular % 10) == 0)
-                    {
-                        costoReparacion = Convert.ToDouble(txt_reparacionRegular.Text);
-                        estadoMotorFin = "Bueno";
-                        costoOperacionSemanaAcumulado += costoReparacion;
-                    }
-                    else
-                    {
-                        costoReparacion = 0;
-                    }
+                    costoReparacion = Convert.ToDouble(txt_reparacionRegular.Text);
+                    estadoMotorFin = "Bueno";
+                    costoOperacionSemanaAcumulado += costoReparacion;
                 }
                 if (estadoMotorInicio == "Malo")
                 {

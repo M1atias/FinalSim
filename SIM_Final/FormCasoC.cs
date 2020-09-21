@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace SIM_Final
 {
-    public partial class FormCasoB : Form
+    public partial class FormCasoC : Form
     {
         private double textBB;
         private double textBR;
@@ -36,18 +36,17 @@ namespace SIM_Final
         private double costoSemanaMalo;
         private double costoReparacion;
 
-        public FormCasoB()
+        public FormCasoC()
         {
             InitializeComponent();
             this.configurarDataGrid();
         }
 
-        private void FormCasoB_Load(object sender, EventArgs e)
+        private void FormCasoC_Load(object sender, EventArgs e)
         {
             gb_probabilidades.Enabled = false;
             btn_Recalcular.Enabled = false;
             recalcularCostoOperacion();
-
         }
 
         public void recalcularCostoOperacion()
@@ -143,23 +142,16 @@ namespace SIM_Final
                     estadoMotorFin = compararValores(numeroAleatorio2, textRB, textRR, textRM);
                     contadorRegular += 1;
                     costoOperacionSemana = Convert.ToDouble(lbl_costoSemanaRegular.Text);
-                    if ((contadorRegular % 10) == 0)
-                    {
-                        costoReparacion = Convert.ToDouble(txt_reparacionRegular.Text);
-                        estadoMotorFin = "Bueno";
-                        costoOperacionSemanaAcumulado += costoReparacion;
-                    }
-                    else
-                    {
-                        costoReparacion = 0;
-                    }
+                    costoReparacion = 0;
                 }
                 if (estadoMotorInicio == "Malo")
                 {
                     estadoMotorFin = compararValores(numeroAleatorio2, textMB, textMR, textMM);
                     contadorMalo += 1;
                     costoOperacionSemana = Convert.ToDouble(lbl_costoSemanaMalo.Text);
-                    costoReparacion = 0;
+                    costoReparacion = Convert.ToDouble(txt_reparacionMala.Text);
+                    estadoMotorFin = "Bueno";
+                    costoOperacionSemanaAcumulado += costoReparacion;
                 }
                 costoOperacionSemanaAcumulado += costoOperacionSemana;
                 this.cargarFormulario(i, estadoMotorInicio, numeroAleatorio2, estadoMotorFin, costoOperacionSemana, costoOperacionSemanaAcumulado, costoReparacion);

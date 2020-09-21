@@ -155,7 +155,7 @@ namespace SIM_Final
                     costoOperacionSemana = Convert.ToDouble(lbl_costoSemanaMalo.Text);
                     if ((contadorMalo % 52) == 0)
                     {
-                        costoReparacion = 5000000;
+                        costoReparacion = Convert.ToDouble(txt_reparacionMala.Text);
                         estadoMotorFin = "Bueno";
                         costoOperacionSemanaAcumulado += costoReparacion;
                     }

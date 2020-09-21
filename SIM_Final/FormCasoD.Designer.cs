@@ -1,6 +1,6 @@
 ﻿namespace SIM_Final
 {
-    partial class FormCasoB
+    partial class FormCasoD
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.txt_reparacionMala = new System.Windows.Forms.TextBox();
+            this.txt_reparacionRegular = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label21 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
@@ -90,18 +95,60 @@
             this.txt_Semana = new System.Windows.Forms.TextBox();
             this.lbl_Semana = new System.Windows.Forms.Label();
             this.dgv_GridCasoA = new System.Windows.Forms.DataGridView();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.txt_reparacionMala = new System.Windows.Forms.TextBox();
-            this.txt_reparacionRegular = new System.Windows.Forms.TextBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
+            this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.gb_costoOperacion.SuspendLayout();
             this.gb_probabilidades.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_GridCasoA)).BeginInit();
-            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.txt_reparacionMala);
+            this.groupBox3.Controls.Add(this.txt_reparacionRegular);
+            this.groupBox3.Controls.Add(this.label23);
+            this.groupBox3.Controls.Add(this.label24);
+            this.groupBox3.Location = new System.Drawing.Point(674, 438);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(362, 110);
+            this.groupBox3.TabIndex = 107;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Costo Reparación";
+            // 
+            // txt_reparacionMala
+            // 
+            this.txt_reparacionMala.Location = new System.Drawing.Point(85, 68);
+            this.txt_reparacionMala.Name = "txt_reparacionMala";
+            this.txt_reparacionMala.Size = new System.Drawing.Size(100, 20);
+            this.txt_reparacionMala.TabIndex = 12;
+            this.txt_reparacionMala.Text = "5000000";
+            // 
+            // txt_reparacionRegular
+            // 
+            this.txt_reparacionRegular.Location = new System.Drawing.Point(85, 29);
+            this.txt_reparacionRegular.Name = "txt_reparacionRegular";
+            this.txt_reparacionRegular.Size = new System.Drawing.Size(100, 20);
+            this.txt_reparacionRegular.TabIndex = 11;
+            this.txt_reparacionRegular.Text = "2500000";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(16, 71);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(36, 13);
+            this.label23.TabIndex = 9;
+            this.label23.Text = "Malo :";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(16, 32);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(53, 13);
+            this.label24.TabIndex = 8;
+            this.label24.Text = "Regular : ";
             // 
             // groupBox2
             // 
@@ -112,10 +159,10 @@
             this.groupBox2.Controls.Add(this.lbl_CostoAcumuladoTotal);
             this.groupBox2.Controls.Add(this.lbl_Regular);
             this.groupBox2.Controls.Add(this.lbl_Bueno);
-            this.groupBox2.Location = new System.Drawing.Point(639, 555);
+            this.groupBox2.Location = new System.Drawing.Point(674, 554);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(362, 133);
-            this.groupBox2.TabIndex = 84;
+            this.groupBox2.TabIndex = 106;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Resultados  de Simulación:";
             // 
@@ -196,10 +243,10 @@
             this.gb_costoOperacion.Controls.Add(this.label16);
             this.gb_costoOperacion.Controls.Add(this.label15);
             this.gb_costoOperacion.Controls.Add(this.label5);
-            this.gb_costoOperacion.Location = new System.Drawing.Point(639, 236);
+            this.gb_costoOperacion.Location = new System.Drawing.Point(674, 235);
             this.gb_costoOperacion.Name = "gb_costoOperacion";
             this.gb_costoOperacion.Size = new System.Drawing.Size(362, 175);
-            this.gb_costoOperacion.TabIndex = 83;
+            this.gb_costoOperacion.TabIndex = 105;
             this.gb_costoOperacion.TabStop = false;
             this.gb_costoOperacion.Text = "Costo Operación";
             // 
@@ -341,10 +388,10 @@
             this.gb_probabilidades.Controls.Add(this.lbl_RB);
             this.gb_probabilidades.Controls.Add(this.lbl_RM);
             this.gb_probabilidades.Controls.Add(this.lbl_RR);
-            this.gb_probabilidades.Location = new System.Drawing.Point(10, 6);
+            this.gb_probabilidades.Location = new System.Drawing.Point(8, 5);
             this.gb_probabilidades.Name = "gb_probabilidades";
             this.gb_probabilidades.Size = new System.Drawing.Size(604, 184);
-            this.gb_probabilidades.TabIndex = 82;
+            this.gb_probabilidades.TabIndex = 104;
             this.gb_probabilidades.TabStop = false;
             this.gb_probabilidades.Text = "Probabilidades";
             // 
@@ -620,10 +667,10 @@
             this.groupBox1.Controls.Add(this.btn_Recalcular);
             this.groupBox1.Controls.Add(this.rbt_modificar);
             this.groupBox1.Controls.Add(this.rbt_valoresListos);
-            this.groupBox1.Location = new System.Drawing.Point(639, 10);
+            this.groupBox1.Location = new System.Drawing.Point(637, 9);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(167, 180);
-            this.groupBox1.TabIndex = 81;
+            this.groupBox1.TabIndex = 103;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Modificar Probabilidades";
             // 
@@ -663,10 +710,10 @@
             // 
             // btn_salir
             // 
-            this.btn_salir.Location = new System.Drawing.Point(731, 195);
+            this.btn_salir.Location = new System.Drawing.Point(729, 194);
             this.btn_salir.Name = "btn_salir";
             this.btn_salir.Size = new System.Drawing.Size(75, 35);
-            this.btn_salir.TabIndex = 80;
+            this.btn_salir.TabIndex = 102;
             this.btn_salir.Text = "Salir";
             this.btn_salir.UseVisualStyleBackColor = true;
             this.btn_salir.Click += new System.EventHandler(this.btn_salir_Click_1);
@@ -674,101 +721,54 @@
             // btn_borrarSimulacion
             // 
             this.btn_borrarSimulacion.Enabled = false;
-            this.btn_borrarSimulacion.Location = new System.Drawing.Point(237, 195);
+            this.btn_borrarSimulacion.Location = new System.Drawing.Point(235, 194);
             this.btn_borrarSimulacion.Name = "btn_borrarSimulacion";
             this.btn_borrarSimulacion.Size = new System.Drawing.Size(75, 35);
-            this.btn_borrarSimulacion.TabIndex = 79;
+            this.btn_borrarSimulacion.TabIndex = 101;
             this.btn_borrarSimulacion.Text = "Borrar Simulación";
             this.btn_borrarSimulacion.UseVisualStyleBackColor = true;
             this.btn_borrarSimulacion.Click += new System.EventHandler(this.button1_Click);
             // 
             // btn_ComenzarSimulación
             // 
-            this.btn_ComenzarSimulación.Location = new System.Drawing.Point(149, 195);
+            this.btn_ComenzarSimulación.Location = new System.Drawing.Point(147, 194);
             this.btn_ComenzarSimulación.Name = "btn_ComenzarSimulación";
             this.btn_ComenzarSimulación.Size = new System.Drawing.Size(75, 35);
-            this.btn_ComenzarSimulación.TabIndex = 78;
+            this.btn_ComenzarSimulación.TabIndex = 100;
             this.btn_ComenzarSimulación.Text = "Comenzar Simulación";
             this.btn_ComenzarSimulación.UseVisualStyleBackColor = true;
             this.btn_ComenzarSimulación.Click += new System.EventHandler(this.btn_ComenzarSimulación_Click);
             // 
             // txt_Semana
             // 
-            this.txt_Semana.Location = new System.Drawing.Point(77, 203);
+            this.txt_Semana.Location = new System.Drawing.Point(75, 202);
             this.txt_Semana.Name = "txt_Semana";
             this.txt_Semana.Size = new System.Drawing.Size(58, 20);
-            this.txt_Semana.TabIndex = 77;
+            this.txt_Semana.TabIndex = 99;
             this.txt_Semana.Text = "52";
             // 
             // lbl_Semana
             // 
             this.lbl_Semana.AutoSize = true;
-            this.lbl_Semana.Location = new System.Drawing.Point(11, 206);
+            this.lbl_Semana.Location = new System.Drawing.Point(9, 205);
             this.lbl_Semana.Name = "lbl_Semana";
             this.lbl_Semana.Size = new System.Drawing.Size(60, 13);
-            this.lbl_Semana.TabIndex = 76;
+            this.lbl_Semana.TabIndex = 98;
             this.lbl_Semana.Text = "Semanas : ";
             // 
             // dgv_GridCasoA
             // 
             this.dgv_GridCasoA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_GridCasoA.Location = new System.Drawing.Point(10, 236);
+            this.dgv_GridCasoA.Location = new System.Drawing.Point(8, 235);
             this.dgv_GridCasoA.Name = "dgv_GridCasoA";
-            this.dgv_GridCasoA.Size = new System.Drawing.Size(604, 452);
-            this.dgv_GridCasoA.TabIndex = 75;
+            this.dgv_GridCasoA.Size = new System.Drawing.Size(637, 452);
+            this.dgv_GridCasoA.TabIndex = 97;
             // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.txt_reparacionMala);
-            this.groupBox3.Controls.Add(this.txt_reparacionRegular);
-            this.groupBox3.Controls.Add(this.label23);
-            this.groupBox3.Controls.Add(this.label24);
-            this.groupBox3.Location = new System.Drawing.Point(639, 439);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(362, 110);
-            this.groupBox3.TabIndex = 96;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Costo Reparación";
-            // 
-            // txt_reparacionMala
-            // 
-            this.txt_reparacionMala.Location = new System.Drawing.Point(85, 68);
-            this.txt_reparacionMala.Name = "txt_reparacionMala";
-            this.txt_reparacionMala.Size = new System.Drawing.Size(100, 20);
-            this.txt_reparacionMala.TabIndex = 12;
-            this.txt_reparacionMala.Text = "5000000";
-            // 
-            // txt_reparacionRegular
-            // 
-            this.txt_reparacionRegular.Location = new System.Drawing.Point(85, 29);
-            this.txt_reparacionRegular.Name = "txt_reparacionRegular";
-            this.txt_reparacionRegular.Size = new System.Drawing.Size(100, 20);
-            this.txt_reparacionRegular.TabIndex = 11;
-            this.txt_reparacionRegular.Text = "2500000";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(16, 71);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(36, 13);
-            this.label23.TabIndex = 9;
-            this.label23.Text = "Malo :";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(16, 32);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(53, 13);
-            this.label24.TabIndex = 8;
-            this.label24.Text = "Regular : ";
-            // 
-            // FormCasoB
+            // FormCasoD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1034, 731);
+            this.ClientSize = new System.Drawing.Size(1098, 749);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.gb_costoOperacion);
@@ -780,9 +780,11 @@
             this.Controls.Add(this.txt_Semana);
             this.Controls.Add(this.lbl_Semana);
             this.Controls.Add(this.dgv_GridCasoA);
-            this.Name = "FormCasoB";
-            this.Text = "FormCasoB";
-            this.Load += new System.EventHandler(this.FormCasoB_Load);
+            this.Name = "FormCasoD";
+            this.Text = "FormCasoD";
+            this.Load += new System.EventHandler(this.FormCasoD_Load);
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.gb_costoOperacion.ResumeLayout(false);
@@ -792,8 +794,6 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_GridCasoA)).EndInit();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -801,6 +801,11 @@
 
         #endregion
 
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.TextBox txt_reparacionMala;
+        private System.Windows.Forms.TextBox txt_reparacionRegular;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label24;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label20;
@@ -863,10 +868,5 @@
         private System.Windows.Forms.TextBox txt_Semana;
         private System.Windows.Forms.Label lbl_Semana;
         private System.Windows.Forms.DataGridView dgv_GridCasoA;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.TextBox txt_reparacionMala;
-        private System.Windows.Forms.TextBox txt_reparacionRegular;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label24;
     }
 }
